@@ -18,3 +18,5 @@ C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\TestModBus\bin\Release\log4net.
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\TestModBus\bin\Release\Unme.Common.dll
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\TestModBus\bin\Release\GunneboMFLAFLGate.pdb
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\TestModBus\obj\Release\TestModBus.csprojResolveAssemblyReference.cache
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\obj\Release\TestModBus.exe
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\obj\Release\TestModBus.pdb
