@@ -1,0 +1,263 @@
+﻿Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Rolling back assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Restoring event log to previous state for source EasyGate Agg. Stato Voli.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Rolling back assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Rolling back assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Restoring event log to previous state for source EasyGate Agg. Stato Voli.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Warning: The source EasyGate Agg. Stato Voli is not registered on the local machine.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Rolling back assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Restoring event log to previous state for source EasyGate Agg. Stato Voli.
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Attempt to stop service EasyGate Agg. Stato Voli.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\aggiornastatovoli.exe
+Uninstalling assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Removing EventLog source EasyGate Agg. Stato Voli.
+Service EasyGate Agg. Stato Voli is being removed from the system...
+Service EasyGate Agg. Stato Voli was successfully removed from the system.
+Installing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+Installing service EasyGate Agg. Stato Voli...
+Service EasyGate Agg. Stato Voli has been successfully installed.
+Creating EventLog source EasyGate Agg. Stato Voli in log Application...
+Committing assembly 'L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.InstallLog
+   assemblypath = L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe

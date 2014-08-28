@@ -1,0 +1,16 @@
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\easyGateGunnebo.exe
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\easyGateGunnebo.pdb
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\obj\Release\easyGateGunnebo.easyGate.resources
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\obj\Release\easyGateGunnebo.Properties.Resources.resources
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\obj\Release\easyGateGunnebo.csproj.GenerateResource.Cache
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\obj\Release\easyGateGunnebo.exe
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\obj\Release\easyGateGunnebo.pdb
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\easyGateGunnebo.exe.config
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\BoardingPassHelper.dll
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\GunneboMFLAFLGate.dll
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\Modbus.dll
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\log4net.dll
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\Unme.Common.dll
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\BoardingPassHelper.pdb
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\bin\Release\GunneboMFLAFLGate.pdb
+C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\obj\Release\easyGateGunnebo.csprojResolveAssemblyReference.cache

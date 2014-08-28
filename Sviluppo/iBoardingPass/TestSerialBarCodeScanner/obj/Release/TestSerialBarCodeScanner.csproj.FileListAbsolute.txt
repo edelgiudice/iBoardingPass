@@ -1,0 +1,7 @@
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\bin\Release\TestSerialBarCodeScanner.exe
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\bin\Release\TestSerialBarCodeScanner.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\bin\Release\BoardingPassHelper.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\bin\Release\BoardingPassHelper.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.csprojResolveAssemblyReference.cache
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.exe
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.pdb

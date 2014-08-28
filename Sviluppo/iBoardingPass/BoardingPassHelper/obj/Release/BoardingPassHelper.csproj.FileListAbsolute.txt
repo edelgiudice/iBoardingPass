@@ -1,0 +1,4 @@
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\bin\Release\BoardingPassHelper.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\bin\Release\BoardingPassHelper.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb

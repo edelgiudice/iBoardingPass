@@ -1,0 +1,90 @@
+﻿<Window x:Name="MainWindow1" x:Class="iBoardingPass.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="easyGate" Height="1090.94" Width="1283.439" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" WindowState="Maximized" FontSize="18" Icon="Risorse/iBoardingPass.ico" KeyDown="MainWindow1_KeyDown_1" Closing="MainWindow1_Closing" >
+    <Grid Margin="0,0,-6,-18">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="839*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="142*"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas Margin="10,10,0,32.835" Background="#FF65C7D6" HorizontalAlignment="Left" Width="252.239">
+            <Image Height="60" Canvas.Left="49" Canvas.Top="7.667" Width="142.667"/>
+        </Canvas>
+
+        <GroupBox x:Name="gbScanner" Header="BarCode Scanner" Margin="30.896,0,0,195.106" Height="89.148" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="206.053">
+            <TextBlock x:Name="tLed" TextWrapping="Wrap" Text="PRONTO" Margin="0,10,0,0" Background="#FFC9CFC9" Cursor="None" TextAlignment="Center" Foreground="White" Height="46.267" VerticalAlignment="Top"/>
+        </GroupBox>
+        <Image Height="134.328" Margin="10,0,0,48.806" VerticalAlignment="Bottom" Source="Risorse/SOGAER_logo.png" HorizontalAlignment="Left" Width="238.806"/>
+        <Image HorizontalAlignment="Left" Margin="54,35,0,0" Width="164.066" Source="Risorse/iBardingPass_icon_256.png" Height="176" VerticalAlignment="Top"/>
+        <GroupBox x:Name="gDataOra" Header="Data &amp; Ora" HorizontalAlignment="Left" Margin="30.896,343,0,0" Width="206.053" Height="104.94" VerticalAlignment="Top">
+            <Grid Margin="0,0,0,5">
+                <TextBlock x:Name="tbData" Margin="10,10,10,0" TextWrapping="Wrap" Height="37.94" VerticalAlignment="Top" Text="-- /--/ ----" TextAlignment="Center" IsEnabled="False"/>
+                <TextBlock x:Name="tbOra" Margin="10,38.94,10,0" TextWrapping="Wrap" Text="00:00:00" TextAlignment="Center" IsEnabled="False" RenderTransformOrigin="0.472,-0.104"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="gBoardingPassData" Header="Dati Carta di Imbarco" HorizontalAlignment="Left" Margin="300,10,0,0" VerticalAlignment="Top" Height="315.215" Width="459.053">
+            <Grid Margin="0,0,-2,0">
+                <Label x:Name="lbVolo" Content="Volo n." HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top"/>
+                <Rectangle x:Name="ledFlightNumb" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+                <TextBlock x:Name="tbFlightNum" HorizontalAlignment="Left" Margin="115,15,0,0" TextWrapping="Wrap" Text="----------" VerticalAlignment="Top"/>
+                <Rectangle x:Name="ledFlightDate" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="36" Margin="10,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+                <Label x:Name="ldFlightDate" Content="Data Volo:" HorizontalAlignment="Left" Margin="34,63.06,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tbFlightDate" HorizontalAlignment="Left" Margin="151,68.06,0,0" TextWrapping="Wrap" Text="--/--/----" VerticalAlignment="Top"/>
+                <Rectangle x:Name="ledAeroportoPartenza" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="36" Margin="10,114,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+                <Label x:Name="lFromCity" Content="Aeroporto Partenza" HorizontalAlignment="Left" Margin="34,114,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tbCodFromCity" HorizontalAlignment="Left" Margin="253,124,0,0" TextWrapping="Wrap" Text="---" Width="69.6" Height="28.94" VerticalAlignment="Top"/>
+                <Label x:Name="lToCity" Content="Aeroporto Destinazione" HorizontalAlignment="Left" Margin="34,152.94,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tbCodToCity" HorizontalAlignment="Left" Margin="253,157.94,0,0" TextWrapping="Wrap" Text="---" Width="69.6" Height="28.94" VerticalAlignment="Top"/>
+                <Label x:Name="lAirCompany" Content="Compagnia Aerea" HorizontalAlignment="Left" Margin="34.95,196.88,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tbAirCmpany" HorizontalAlignment="Left" Margin="253,196.88,0,0" TextWrapping="Wrap" Text="---" Width="69.6" Height="28.94" VerticalAlignment="Top"/>
+                <Label x:Name="lPassengerName" Content="Passeggero" HorizontalAlignment="Left" Margin="34.95,235.82,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tbPassengerName" HorizontalAlignment="Left" Margin="151,240.82,0,0" TextWrapping="Wrap" Text="--------------------" Width="276.6" Height="28.94" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <TextBox x:Name="dummyBox" HorizontalAlignment="Left" Height="30" Margin="284,473.94,0,0" TextWrapping="Wrap" Text="DUMMY CONTROL FOR BAR SCANNER" VerticalAlignment="Top" Width="0" LostFocus="dummyBox_LostFocus"/>
+        <GroupBox x:Name="gbFastTrack" Header="Fast Track" Margin="791,10,0,0" Grid.ColumnSpan="3" Height="185.765" VerticalAlignment="Top" HorizontalAlignment="Left" Width="169.806">
+            <Image x:Name="imgFastTrack" HorizontalAlignment="Left" Height="154.825" VerticalAlignment="Top" Width="157.806" Source="pack://siteoforigin:,,,/Resources/FT_OFF.png"/>
+        </GroupBox>
+        <GroupBox x:Name="gPostazione" Header="Dati Postazione" HorizontalAlignment="Left" Margin="30.896,217.45,0,0" Width="206.053" Height="107.765" VerticalAlignment="Top">
+            <Grid Margin="0,0,-2,-2">
+                <CheckBox x:Name="cbStazionePrincipale" Content="Ingresso Coda" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+                <CheckBox x:Name="cbFastTrack" Content="Fast Track" HorizontalAlignment="Left" Margin="10,38.94,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="gFlightDetails" Header="Dettagli Volo" HorizontalAlignment="Left" Margin="300,343,0,0" VerticalAlignment="Top" Height="174.94" Width="459.053">
+            <Grid>
+                <Label Content="Orario Schedulato" HorizontalAlignment="Left" Margin="45,20.06,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="TBOrarioPrevisto" HorizontalAlignment="Left" Margin="210,25.06,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top"/>
+                <Label Content="Orario Previsto" HorizontalAlignment="Left" Margin="45,63.12,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="TBOrarioEffettivo" HorizontalAlignment="Left" Margin="210,73.12,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top"/>
+                <Label Content="Stato Volo" HorizontalAlignment="Left" Margin="45,105.06,0,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="TBStatoVolo" HorizontalAlignment="Left" Margin="210,110.06,0,0" TextWrapping="Wrap" Text="------------------------" VerticalAlignment="Top"/>
+                <Rectangle x:Name="ledFlightTime" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="36" Margin="10,61.06,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.733,1.806"/>
+                <Rectangle x:Name="ledFlightStatus" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="36" Margin="10,102.06,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.733,1.806"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="bnManualEnter" Content="Avanti" HorizontalAlignment="Left" Margin="300,538,0,0"  VerticalAlignment="Top" Width="449.053" Height="143.94" Background="#FFD8141D" FontWeight="Bold" FontSize="36"  Foreground="#FFE9F3FF" Click="bnManualEnter_Click" MouseEnter="bnManualEnter_MouseEnter" MouseLeave="bnManualEnter_MouseLeave"/>
+        <Canvas Margin="1038.567,10,10,32.835" Grid.ColumnSpan="3" Background="#FF65C7D6">
+            <GroupBox x:Name="gStatistiche" Header="Statistiche" HorizontalAlignment="Left" Width="206.053" Height="258.746" VerticalAlignment="Bottom" Canvas.Left="21.499" Canvas.Top="25.94">
+                <Grid Margin="0,0,-12,-2" Height="270.806" VerticalAlignment="Top">
+                    <Label x:Name="lOperativoDa" Content="Num. Minuti" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbMinuti" Height="31.94" Margin="0,12,14.667,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="61.377" Text="0" IsEnabled="False" TextAlignment="Right"/>
+                    <Label x:Name="lbNumLetture" Content="Num. Letture" HorizontalAlignment="Left" Margin="10,43.94,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbLetture" Height="31.94" Margin="0,48.94,14.667,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="61.377" TextAlignment="Right" IsEnabled="False" Text="0"/>
+                    <Button x:Name="bnAzzeraStat" Content="Azzera Statistiche" Margin="10,176.866,0,0" VerticalAlignment="Top" Height="45.94" HorizontalAlignment="Left" Width="165.5" Click="bnAzzeraStat_Click"/>
+                    <Label x:Name="lnIngressi" Content="Num. Ingressi" HorizontalAlignment="Left" Margin="4.259,86.82,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbNumIngressi" Height="31.94" Margin="0,86.82,14.667,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="61.377" TextAlignment="Right" IsEnabled="False" Text="0"/>
+                    <Label x:Name="lnIngressi_Copy" Content="Num. Respinti" HorizontalAlignment="Left" Margin="5.063,125.76,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbNumRespinti" Height="31.94" Margin="0,127.76,14.667,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="61.377" TextAlignment="Right" IsEnabled="False" Text="0"/>
+                </Grid>
+            </GroupBox>
+        </Canvas>
+        <Image Source="Risorse/logo (1).png" HorizontalAlignment="Right" Width="198.507" Height="59.702" VerticalAlignment="Bottom" RenderTransformOrigin="0.486,-0.09" Margin="0,0,24.433,48.806" Grid.ColumnSpan="3"/>
+        <MediaElement x:Name="mediaElementObj" HorizontalAlignment="Left" Height="100" Margin="494,1095,0,-114.06" VerticalAlignment="Top" Width="100" LoadedBehavior="Manual" />
+
+
+
+    </Grid>
+</Window>

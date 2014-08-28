@@ -1,0 +1,9 @@
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe.config
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.exe
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Debug\AggiornaStatoVoli.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Debug\AggiornaStatoVoli.exe
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Debug\AggiornaStatoVoli.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Debug\AggiornaStatoVoli.ProjectInstaller.resources
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Debug\AggiornaStatoVoli.ServiceAggStatoVoli.resources
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Debug\AggiornaStatoVoli.csproj.GenerateResource.Cache
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Debug\AggiornaStatoVoli.csprojResolveAssemblyReference.cache

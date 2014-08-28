@@ -1,0 +1,14 @@
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Test.exe
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Test.pdb
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Modbus.dll
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Modbus.pdb
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Debug\Test.exe
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Debug\Test.pdb
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Debug\Test.exe
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Debug\Test.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Test.exe
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Test.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Modbus.dll
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Debug\Modbus.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

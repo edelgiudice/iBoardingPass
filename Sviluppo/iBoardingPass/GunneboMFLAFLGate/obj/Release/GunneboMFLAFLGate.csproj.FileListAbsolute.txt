@@ -1,0 +1,8 @@
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\bin\Release\GunneboMFLAFLGate.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\bin\Release\GunneboMFLAFLGate.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\bin\Release\Modbus.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\bin\Release\log4net.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\bin\Release\Unme.Common.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.csprojResolveAssemblyReference.cache
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.pdb

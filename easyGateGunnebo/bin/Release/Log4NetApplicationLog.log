@@ -1,0 +1,9 @@
+2014-07-26 23:51:02,086 [1] INFO  easyGateGunnebo.easyGate [(null)] - EasyGate Startup
+2014-07-26 23:51:02,321 [1] INFO  easyGateGunnebo.easyGate [(null)] - Inizializzazione Barcode Seriale
+2014-07-26 23:51:02,444 [1] ERROR easyGateGunnebo.easyGate [(null)] - Errore nell'apertura della porta COM del lettore BarCode System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at iBoardingPass.serialBarcodeReader.Open() in c:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\serialBarcodeReader.cs:line 99
+   at easyGateGunnebo.easyGate.InitSerialBarcodeReader() in c:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\easyGateGunnebo\Form1.cs:line 75
+2014-07-26 23:51:07,351 [1] INFO  easyGateGunnebo.easyGate [(null)] - EasyGate Closed

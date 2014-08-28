@@ -1,0 +1,7 @@
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassTests.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassTests.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassHelper.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassHelper.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.csprojResolveAssemblyReference.cache
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.dll
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.pdb

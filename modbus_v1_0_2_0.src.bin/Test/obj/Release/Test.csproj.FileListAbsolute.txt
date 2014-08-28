@@ -1,0 +1,16 @@
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Test.exe
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Test.pdb
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Modbus.dll
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Modbus.pdb
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Release\Test.exe
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Release\Test.pdb
+D:\Sincronia\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Release\Test.exe
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Release\Test.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Test.exe
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Test.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Modbus.dll
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\bin\Release\Modbus.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+L:\Lavoro\Progetti\iBoardingPass\modbus_v1_0_2_0.src.bin\Test\obj\Release\Test.exe
+L:\Lavoro\Progetti\iBoardingPass\modbus_v1_0_2_0.src.bin\Test\obj\Release\Test.pdb

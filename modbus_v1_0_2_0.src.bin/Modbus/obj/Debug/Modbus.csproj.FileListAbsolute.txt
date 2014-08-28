@@ -1,0 +1,5 @@
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Modbus\bin\Debug\Modbus.dll
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Modbus\bin\Debug\Modbus.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Modbus\obj\Debug\Modbus.dll
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Modbus\obj\Debug\Modbus.pdb
+D:\Sincronia\SkyDrive\Files\Lavoro\Progetti\Visual Studio\Modbus\Modbus\obj\Debug\Modbus.csprojResolveAssemblyReference.cache

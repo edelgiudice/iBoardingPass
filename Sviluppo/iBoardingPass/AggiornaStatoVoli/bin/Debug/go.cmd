@@ -1,0 +1,1 @@
+AggiornaStatoVoli.exe -c

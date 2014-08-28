@@ -1,0 +1,9 @@
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Release\AggiornaStatoVoli.exe.config
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Release\AggiornaStatoVoli.exe
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\bin\Release\AggiornaStatoVoli.pdb
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.csprojResolveAssemblyReference.cache
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.ProjectInstaller.resources
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.ServiceAggStatoVoli.resources
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.csproj.GenerateResource.Cache
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.exe
+L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.pdb

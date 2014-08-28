@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AggiornaStatoVoli.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FtpServerUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://www.stn01.it</Value>
+    </Setting>
+    <Setting Name="FtpUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4645928@aruba.it</Value>
+    </Setting>
+    <Setting Name="FtpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">yvex07fa2s</Value>
+    </Setting>
+    <Setting Name="FtpFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">www.stn01.it/easyGate</Value>
+    </Setting>
+    <Setting Name="InfoVoliFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">opeTests.txt</Value>
+    </Setting>
+    <Setting Name="DbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=EMILIOPC\EXPRESSR2;Initial Catalog=EasyGate;Persist Security Info=True;User ID=easyGate;Password=easyG2013&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=EMILIOPC\EXPRESSR2;Initial Catalog=EasyGate;Persist Security Info=True;User ID=easyGate;Password=easyG2013</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
