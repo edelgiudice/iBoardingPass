@@ -47,6 +47,7 @@ namespace TestSerialBarCodeScanner
                     //Inserisce il dato letto nel DB e verifica la carta di imbarco
                     try
                     {
+                        Exception exResult=null;
                         resultCheck = BPHelper.CheckBoardingPass(@"Data Source=EASYGATE01-PC\SQLEXPRESS;Initial Catalog=EasyGate;Persist Security Info=True;Trusted_Connection=True",
                             "CAG",
                             _BpD,
@@ -55,7 +56,8 @@ namespace TestSerialBarCodeScanner
                             false,
                             out StatoVolo,
                             out OraPrevistaVolo,
-                            out OraEffettivaVolo);
+                            out OraEffettivaVolo,
+                            out exResult);
                         Console.WriteLine("Result check: "+resultCheck);
                     }
                     catch (System.Exception ex)

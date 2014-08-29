@@ -19,5 +19,34 @@ namespace BoardingPassTests
             string BPCode = @"M1DEL GIUDICE/RICACRDO S8B8NR CUFCAGFR 4816 283Y000 77   10C           B@";
             BoardingPassData bpd = BoardingPassData.Parse(BPCode);
         }
+
+        [TestMethod]
+        public void CheckBoardingPass_01()
+        {
+            Exception exResult = null;
+            string BPCode = @"M1DEL GIUDICE/RICACRDO S8B8NR CUFCAGFR 4816 283Y000 77   10C           B@";
+            BoardingPassData bpd = BoardingPassData.Parse(BPCode);
+            string connectionString = @"Data Source=192.168.0.47\EXPRESSR2;Initial Catalog=EasyGate;Persist Security Info=True;User ID=easyGate;Password=easyG2013";
+            string statoVolo=string.Empty;
+            string oraVoloEffettiva=string.Empty;
+            string oraVoloPrevista=string.Empty;
+            
+            string result=BPHelper.CheckBoardingPass(
+                connectionString
+                ,"CAG"
+                ,bpd
+                ,0
+                ,3
+                ,false
+                ,1
+                , out statoVolo
+                , out oraVoloPrevista
+                ,out  oraVoloEffettiva
+                ,out exResult
+                ,false
+                );
+            Console.WriteLine(result);
+                
+        }
     }
 }

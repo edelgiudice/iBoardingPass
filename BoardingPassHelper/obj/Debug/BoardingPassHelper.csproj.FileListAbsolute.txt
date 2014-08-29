@@ -3,3 +3,8 @@ L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\bin\D
 L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Debug\BoardingPassHelper.dll
 L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Debug\BoardingPassHelper.pdb
 L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Debug\BoardingPassHelper.csprojResolveAssemblyReference.cache
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Debug\BoardingPassHelper.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Debug\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Debug\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Debug\BoardingPassHelper.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Debug\BoardingPassHelper.pdb

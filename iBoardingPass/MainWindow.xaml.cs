@@ -300,6 +300,7 @@ namespace iBoardingPass
             //Inserisce il dato letto nel DB e verifica la carta di imbarco
             try
             {
+                Exception exResult = null;
                 resultCheck = BPHelper.CheckBoardingPass(this.easyGateDBConnStr, 
                     iBoardingPass.Properties.Settings.Default.CodAeroporto, 
                     _BpD, 
@@ -308,7 +309,8 @@ namespace iBoardingPass
                     iBoardingPass.Properties.Settings.Default.FastTrackAlarm, 
                     out StatoVolo,
                     out OraPrevistaVolo,
-                    out OraEffettivaVolo);
+                    out OraEffettivaVolo,
+                    out exResult);
             }
             catch (System.Exception ex)
             {
@@ -509,7 +511,8 @@ namespace iBoardingPass
             if (LastBpD != null)
             {
                 string statoVolo, OraPrevista, OraEffettiva;
-                BPHelper.CheckBoardingPass(this.easyGateDBConnStr, iBoardingPass.Properties.Settings.Default.CodAeroporto, LastBpD, this.codicePostazione, FinestraOreaccettazione, iBoardingPass.Properties.Settings.Default.FastTrackAlarm, out statoVolo, out OraPrevista, out OraEffettiva, true);
+                Exception exResult = null;
+                BPHelper.CheckBoardingPass(this.easyGateDBConnStr, iBoardingPass.Properties.Settings.Default.CodAeroporto, LastBpD, this.codicePostazione, FinestraOreaccettazione, iBoardingPass.Properties.Settings.Default.FastTrackAlarm, out statoVolo, out OraPrevista, out OraEffettiva,out exResult, true);
                 UpDateStats();
                 LastBpD = null;
 

@@ -21,6 +21,27 @@ namespace easyGateGunnebo
         private serialBarcodeReader reader;
         private SerialPort port;
 
+        private int runningMode
+        {
+            get
+            {
+                return _runnigMode;
+            }
+            set
+            {
+                _runnigMode = value;
+                if (_runnigMode == 0)
+                {
+                    lb_runningMode.Text = "O";
+                }
+                else
+                {
+                    lb_runningMode.Text = "";
+                }
+            }
+        }
+        private int _runnigMode = 0;
+        private int retryChangeRunnigModeInterval = 60;
 
         private string cartaImbarcoITA = "Carta d'Imbarco";
         private string cartaImbarcoENG = "Boarding Pass";
@@ -31,7 +52,14 @@ namespace easyGateGunnebo
         private string nonValidoDATE_ENG = "WRONG DAY";
         private string nonValidoAIRPORT_ITA = "AEROPORTO ERRATO";
         private string nonValidoAIRPORT_ENG = "WRONG AIRPORT";
+        private string nonValidoDEPARTED_ITA = "IMBARCO CHIUSO";
+        private string nonValidoDEPARTED_ENG = "CLOSED BOARDING";
+        private string nonValidoEARLY_ITA = "ACCESSO IN ANTICIPO";
+        private string nonValidoEARLY_ENG = "ACCESS IN ADVANCE";
+        private string nonValidoNOFLIGHT_ITA = "N.VOLO NON VALIDO";
+        private string nonValidoNOFLIGHT_ENG = "INVALID FLIGHT N.";
 
+        private System.Threading.Timer tmrRunningMode;
 
         private Color greenBckColor = Color.Lime;
         private Color errorBckColor = Color.OrangeRed;
@@ -112,6 +140,10 @@ namespace easyGateGunnebo
             InitGunnabo();
             labelITA.Text = cartaImbarcoITA;
             labelENG.Text = cartaImbarcoENG;
+            tmrRunningMode=new System.Threading.Timer(new System.Threading.TimerCallback(TimeOutRunnigmodeChange));
+            tmrRunningMode.Change(System.Threading.Timeout.Infinite,System.Threading.Timeout.Infinite);
+            runningMode = easyGateGunnebo.Properties.Settings.Default.RunningMode;
+            retryChangeRunnigModeInterval = easyGateGunnebo.Properties.Settings.Default.runnigModeChangeInterval;
         }
 
         private void Reset()
@@ -204,6 +236,14 @@ namespace easyGateGunnebo
             
         }
 
+        void TimeOutRunnigmodeChange(object sender)
+        {
+            Log.Info("Impostazione automatica del RunnigMode a 1");
+            runningMode = 1;
+
+            tmrRunningMode.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
+        }
+
         void reader_OnMessageReceived(string Message)
         {
             Log.Debug("Lettura Barcode: " + Message);
@@ -236,6 +276,7 @@ namespace easyGateGunnebo
                         //Inserisce il dato letto nel DB e verifica la carta di imbarco
                         try
                         {
+                            Exception exResult = null;
                             resultCheck = BPHelper.CheckBoardingPass(
                                  easyGateGunnebo.Properties.Settings.Default.ConnectionString,
                                 easyGateGunnebo.Properties.Settings.Default.CodAeroporto,
@@ -243,11 +284,22 @@ namespace easyGateGunnebo
                                 easyGateGunnebo.Properties.Settings.Default.CodicePostazione,
                                 easyGateGunnebo.Properties.Settings.Default.FinestraOreAccettazione,
                                 easyGateGunnebo.Properties.Settings.Default.FastTrack,
-                                easyGateGunnebo.Properties.Settings.Default.RunningMode,
+                                runningMode,
                                 out StatoVolo,
                                 out OraPrevistaVolo,
-                                out OraEffettivaVolo);
-                       
+                                out OraEffettivaVolo,
+                                out exResult);
+
+                            if (exResult != null)
+                            {
+                                Log.Error("Errore durante la validazione della Carta d'imbarco: " + exResult.ToString());
+                                Log.Error("Impostazione della modalità OFFLINE per i prossimi: " + exResult.ToString()+" minuti");
+                                runningMode = 0;
+                                int interval=(int) TimeSpan.FromMinutes(retryChangeRunnigModeInterval).TotalMilliseconds;
+                                tmrRunningMode.Change(interval, 0);
+
+                            }
+
                             if (resultCheck.Trim().IndexOf('X') == -1)
                             {
                                 labelITA.Text = cartaImbarcoITA;
@@ -299,6 +351,7 @@ namespace easyGateGunnebo
             }
         }
 
+
         private void BlockPassage(string blockMsg)
         {
             try
@@ -318,6 +371,26 @@ namespace easyGateGunnebo
                     labelITA.Text = nonValidoAIRPORT_ITA;
                     labelENG.Text = nonValidoAIRPORT_ENG;
                 }
+
+                if (blockMsg != null && blockMsg.Length >= 1 && blockMsg[2] == 'X')
+                {
+                    labelITA.Text = nonValidoNOFLIGHT_ITA;
+                    labelENG.Text = nonValidoNOFLIGHT_ENG;
+                }
+
+                if (blockMsg != null && blockMsg.Length >= 1 && blockMsg[3] == 'X')
+                {
+                    labelITA.Text = nonValidoDEPARTED_ITA;
+                    labelENG.Text = nonValidoDEPARTED_ENG;
+                }
+
+                if (blockMsg != null && blockMsg.Length >= 1 && blockMsg[4] == 'X')
+                {
+                    labelITA.Text = nonValidoEARLY_ITA;
+                    labelENG.Text = nonValidoEARLY_ENG;
+                }
+
+
                
                 Color bkOld = this.BackColor;
                 

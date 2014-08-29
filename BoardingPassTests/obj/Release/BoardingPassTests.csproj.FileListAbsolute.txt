@@ -13,3 +13,11 @@ C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Release\B
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.dll
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.pdb
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\bin\Release\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.csprojResolveAssemblyReference.cache
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\BoardingPassTests.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\BoardingPassTests.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\BoardingPassHelper.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.pdb

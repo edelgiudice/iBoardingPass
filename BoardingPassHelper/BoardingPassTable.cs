@@ -27,6 +27,7 @@ namespace iBoardingPass
             CodiceCompagnia = bpD.OperatingCarrier;
             PartenzaDa = bpD.FromCity;
             ArrivoA = bpD.ToCity;
+            BPCompleteSTR = bpD.BPCompleteStr;
             FastTrackFlag = Convert.ToInt16(bpD.FastTrackFlag);
         }
 
@@ -47,6 +48,9 @@ namespace iBoardingPass
 
         [Column(CanBeNull = false)]
         public string ArrivoA { get; set; }
+
+        [Column(CanBeNull = false)]
+        public string BPCompleteSTR { get; set; }
 
         [Column(CanBeNull = false)]
         public Int16 FastTrackFlag { get; set; }

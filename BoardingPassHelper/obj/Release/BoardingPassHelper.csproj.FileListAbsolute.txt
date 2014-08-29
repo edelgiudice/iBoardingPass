@@ -7,3 +7,9 @@ C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\bin\Release\
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\bin\Release\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\BoardingPassHelper.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.csprojResolveAssemblyReference.cache
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb

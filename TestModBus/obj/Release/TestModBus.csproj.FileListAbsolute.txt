@@ -20,3 +20,10 @@ C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\TestModBus\bin\Release\GunneboM
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\TestModBus\obj\Release\TestModBus.csprojResolveAssemblyReference.cache
 L:\Sviluppo\GIT\iBoardingPass\TestModBus\obj\Release\TestModBus.exe
 L:\Sviluppo\GIT\iBoardingPass\TestModBus\obj\Release\TestModBus.pdb
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\bin\Release\TestModBus.exe
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\bin\Release\TestModBus.pdb
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\bin\Release\GunneboMFLAFLGate.dll
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\bin\Release\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\bin\Release\Unme.Common.dll
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\bin\Release\GunneboMFLAFLGate.pdb
+L:\Sviluppo\GIT\iBoardingPass\TestModBus\obj\Release\TestModBus.csprojResolveAssemblyReference.cache

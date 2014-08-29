@@ -5,3 +5,11 @@ L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\bin\De
 L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.csprojResolveAssemblyReference.cache
 L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.dll
 L:\Lavoro\Progetti\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassTests.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassTests.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassHelper.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Debug\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Debug\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.csprojResolveAssemblyReference.cache
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Debug\BoardingPassTests.pdb
