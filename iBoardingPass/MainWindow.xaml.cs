@@ -309,8 +309,7 @@ namespace iBoardingPass
                     iBoardingPass.Properties.Settings.Default.FastTrackAlarm, 
                     out StatoVolo,
                     out OraPrevistaVolo,
-                    out OraEffettivaVolo,
-                    out exResult);
+                    out OraEffettivaVolo);
             }
             catch (System.Exception ex)
             {
@@ -512,7 +511,7 @@ namespace iBoardingPass
             {
                 string statoVolo, OraPrevista, OraEffettiva;
                 Exception exResult = null;
-                BPHelper.CheckBoardingPass(this.easyGateDBConnStr, iBoardingPass.Properties.Settings.Default.CodAeroporto, LastBpD, this.codicePostazione, FinestraOreaccettazione, iBoardingPass.Properties.Settings.Default.FastTrackAlarm, out statoVolo, out OraPrevista, out OraEffettiva,out exResult, true);
+                BPHelper.CheckBoardingPass(this.easyGateDBConnStr, iBoardingPass.Properties.Settings.Default.CodAeroporto, LastBpD, this.codicePostazione, FinestraOreaccettazione, iBoardingPass.Properties.Settings.Default.FastTrackAlarm, out statoVolo, out OraPrevista, out OraEffettiva,true);
                 UpDateStats();
                 LastBpD = null;
 

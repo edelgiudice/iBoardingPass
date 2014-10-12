@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Linq;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -110,13 +109,12 @@ namespace iBoardingPass
             }
          
         }
-        public static string CheckBoardingPass(string connectionString, string CodAeroportoPartenza, BoardingPassData BPObj, int Postazione, int FinestraOreaccettazione, bool checkFastTrack, int runnigMode, out string StatoVolo, out string OraPrevistaVolo, out string OraEffettivaVolo, out Exception ex, bool Force = false)
+        public static string CheckBoardingPass(string connectionString, string CodAeroportoPartenza, BoardingPassData BPObj, int Postazione, int FinestraOreaccettazione, bool checkFastTrack, int runnigMode, out string StatoVolo, out string OraPrevistaVolo, out string OraEffettivaVolo,  bool Force = false)
         {
             StatoVolo = string.Empty;
             OraPrevistaVolo = string.Empty;
             OraEffettivaVolo = string.Empty;
             
-            ex = null;
 
             DateTime OraPassaggio = DateTime.Now;
             char[] resultArray = new char[]{
@@ -156,88 +154,79 @@ namespace iBoardingPass
 
             if (runnigMode == 0)
                 return new string(resultArray);
+
+            DataContext dx = new DataContext(connectionString);
+            InfoVoliTable VoloSchedulato = dx.GetTable<InfoVoliTable>()
+                .Where(w => w.NumVolo == BPObj.OperatingCarrier + " " + BPObj.FlightNumber)
+                .Where(w => w.DataVolo == FlightDate.ToString("yyyyMMdd"))
+                .FirstOrDefault();
+
+            //InfoVoliTable VoloSchedulato = dx.GetTable<InfoVoliTable>()
+            //    .Where(w => w.NumVolo == "AP 05497")
+            //    .Where(w => w.DataVolo == "20131023")
+            //    .FirstOrDefault();
+
+            if (VoloSchedulato == null)
+            {
+                resultArray[2] = 'X';
+            }
             else
             {
-                DataContext dx = new DataContext(connectionString);
-                
-                try
+                StatoVolo = VoloSchedulato.DescStatoVolo;
+                OraPrevistaVolo = VoloSchedulato.OraPrevista;
+                OraEffettivaVolo = VoloSchedulato.OraEffettiva;
+                resultArray[2] = 'O';
+
+                switch (VoloSchedulato.CodStatoVolo)
                 {
-                    InfoVoliTable VoloSchedulato = dx.GetTable<InfoVoliTable>()
-                        .Where(w => w.NumVolo == BPObj.OperatingCarrier + " " + BPObj.FlightNumber)
-                        .Where(w => w.DataVolo == FlightDate.ToString("yyyyMMdd"))
-                        .FirstOrDefault();
+                    case "E": resultArray[3] = 'X'; break;  // Volo Cancellato
+                    case "4": resultArray[3] = 'X'; break;  // Volo Decollato
+                    case "3": resultArray[3] = 'X'; break;  // Volo Chiuso
+                    default: resultArray[3] = 'O'; break;
+                }
 
-                    //InfoVoliTable VoloSchedulato = dx.GetTable<InfoVoliTable>()
-                    //    .Where(w => w.NumVolo == "AP 05497")
-                    //    .Where(w => w.DataVolo == "20131023")
-                    //    .FirstOrDefault();
 
-                    if (VoloSchedulato == null)
+
+                DateTime LimiteInferiore = DateTime.Today.AddHours(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(0, 2)) - FinestraOreaccettazione).AddMinutes(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(2, 2)));
+                DateTime LimiteSuperiore = DateTime.Today.AddHours(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(0, 2))).AddMinutes(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(2, 2)));
+                if (OraPassaggio.CompareTo(LimiteSuperiore) > 0)
+                {
+                    //Il volo è già partito
+                    resultArray[4] = 'X';
+                }
+                else
+                {
+                    if (OraPassaggio.CompareTo(LimiteInferiore) < 0)
                     {
-                        resultArray[2] = 'X';
+                        //Il volo parte tra oltre 3 ore
+                        resultArray[4] = 'X';
                     }
                     else
                     {
-                        StatoVolo = VoloSchedulato.DescStatoVolo;
-                        OraPrevistaVolo = VoloSchedulato.OraPrevista;
-                        OraEffettivaVolo = VoloSchedulato.OraEffettiva;
-                        resultArray[2] = 'O';
-
-                        switch (VoloSchedulato.CodStatoVolo)
-                        {
-                            case "E": resultArray[3] = 'X'; break;  // Volo Cancellato
-                            case "4": resultArray[3] = 'X'; break;  // Volo Decollato
-                            case "3": resultArray[3] = 'X'; break;  // Volo Chiuso
-                            default: resultArray[3] = 'O'; break;
-                        }
-
-
-
-                        DateTime LimiteInferiore = DateTime.Today.AddHours(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(0, 2)) - FinestraOreaccettazione).AddMinutes(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(2, 2)));
-                        DateTime LimiteSuperiore = DateTime.Today.AddHours(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(0, 2))).AddMinutes(Convert.ToInt32(VoloSchedulato.OraEffettiva.Substring(2, 2)));
-                        if (OraPassaggio.CompareTo(LimiteSuperiore) > 0)
-                        {
-                            //Il volo è già partito
-                            resultArray[4] = 'X';
-                        }
-                        else
-                        {
-                            if (OraPassaggio.CompareTo(LimiteInferiore) < 0)
-                            {
-                                //Il volo parte tra oltre 3 ore
-                                resultArray[4] = 'X';
-                            }
-                            else
-                            {
-                                resultArray[4] = 'O';
-                            }
-                        }
-                        if (checkFastTrack && !BPObj.FastTrackFlag)
-                        {
-                            // Il biglietto non è FastTrack
-                            resultArray[5] = 'X';
-                        }
-                        else
-                        {
-                            if (checkFastTrack)
-                                resultArray[5] = 'O';
-                        }
-
-
-
+                        resultArray[4] = 'O';
                     }
-                    InsertUpdateBPonDB(connectionString, BPObj);
-                    InsertUpdateLetturaBOonDB(connectionString, BPObj, Postazione, OraEffettivaVolo, new string(resultArray), Force);
-
                 }
-                catch(Exception exception)
+                if (checkFastTrack && !BPObj.FastTrackFlag)
                 {
-                    ex = exception;
+                    // Il biglietto non è FastTrack
+                    resultArray[5] = 'X';
                 }
-                return new string(resultArray);
+                else
+                {
+                    if (checkFastTrack)
+                        resultArray[5] = 'O';
+                }
+
+
+
             }
+            InsertUpdateBPonDB(connectionString, BPObj);
+            InsertUpdateLetturaBOonDB(connectionString, BPObj, Postazione, OraEffettivaVolo, new string(resultArray), Force);
+
+
+            return new string(resultArray);
         }
-        public static string CheckBoardingPass(string connectionString, string CodAeroportoPartenza,BoardingPassData BPObj, int Postazione,int FinestraOreaccettazione, bool checkFastTrack,  out string StatoVolo, out string OraPrevistaVolo,out string OraEffettivaVolo,out Exception ex, bool Force=false)
+        public static string CheckBoardingPass(string connectionString, string CodAeroportoPartenza, BoardingPassData BPObj, int Postazione, int FinestraOreaccettazione, bool checkFastTrack, out string StatoVolo, out string OraPrevistaVolo, out string OraEffettivaVolo, bool Force = false)
         {
             return CheckBoardingPass(connectionString,
                 CodAeroportoPartenza,
@@ -249,7 +238,6 @@ namespace iBoardingPass
                 out StatoVolo,
                 out OraPrevistaVolo,
                 out OraEffettivaVolo,
-                out ex,
                 Force
                 );
         }

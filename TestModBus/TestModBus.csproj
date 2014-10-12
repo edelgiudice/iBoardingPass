@@ -37,7 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Modbus">
-      <HintPath>..\..\..\NModbus_net-3.5_1.11.0.0\bin\net\Modbus.dll</HintPath>
+      <HintPath>..\Lib\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus.Extensions">
+      <HintPath>..\Lib\Modbus.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

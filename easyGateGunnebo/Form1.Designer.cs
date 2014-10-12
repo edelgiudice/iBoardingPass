@@ -38,7 +38,6 @@
             this.panelReset = new System.Windows.Forms.Panel();
             this.labelBusy = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lb_runningMode = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,15 +127,6 @@
             this.label3.Text = "label3";
             this.label3.Visible = false;
             // 
-            // lb_runningMode
-            // 
-            this.lb_runningMode.AutoSize = true;
-            this.lb_runningMode.Location = new System.Drawing.Point(231, 616);
-            this.lb_runningMode.Name = "lb_runningMode";
-            this.lb_runningMode.Size = new System.Drawing.Size(15, 13);
-            this.lb_runningMode.TabIndex = 7;
-            this.lb_runningMode.Text = "O";
-            // 
             // easyGate
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
@@ -144,7 +134,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(480, 800);
-            this.Controls.Add(this.lb_runningMode);
             this.Controls.Add(this.labelBusy);
             this.Controls.Add(this.panelReset);
             this.Controls.Add(this.panelClose);
@@ -180,7 +169,6 @@
         private System.Windows.Forms.Panel panelReset;
         private System.Windows.Forms.Label labelBusy;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lb_runningMode;
     }
 }
 

@@ -57,8 +57,8 @@ namespace TestSerialBarCodeScanner
                             false,
                             out StatoVolo,
                             out OraPrevistaVolo,
-                            out OraEffettivaVolo,
-                            out exResult);
+                            out OraEffettivaVolo
+                            );
                         Console.WriteLine("Result check: "+resultCheck);
                     }
                     catch (System.Exception ex)

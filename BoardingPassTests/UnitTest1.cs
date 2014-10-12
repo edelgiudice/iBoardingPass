@@ -42,7 +42,6 @@ namespace BoardingPassTests
                 , out statoVolo
                 , out oraVoloPrevista
                 ,out  oraVoloEffettiva
-                ,out exResult
                 ,false
                 );
             Console.WriteLine(result);
