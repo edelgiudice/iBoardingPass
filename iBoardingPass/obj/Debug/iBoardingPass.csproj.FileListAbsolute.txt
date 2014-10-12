@@ -28,7 +28,11 @@ L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\easyGate.exe
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\easyGate.pdb
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\BoardingPassHelper.dll
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\log4net.dll
+L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\SpreadsheetLight.dll
+L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\DocumentFormat.OpenXml.dll
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\SpreadsheetLight.xml
+L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\bin\Debug\DocumentFormat.OpenXml.xml
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\iBoardingPass.csprojResolveAssemblyReference.cache
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\MainWindow.baml
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\MainWindow.g.cs

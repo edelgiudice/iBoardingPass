@@ -48,5 +48,13 @@ namespace BoardingPassTests
             Console.WriteLine(result);
                 
         }
+
+        [TestMethod]
+        public void TestReportExcel()
+        {
+            DateTime FlightDate = new DateTime(2013, 10, 14);
+            BoardingDailyReport bdr = new BoardingDailyReport(FlightDate, @"L:\temp\TestExcel", BoardingPassTests.Properties.Settings.Default.connectionString);
+
+        }
     }
 }

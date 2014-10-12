@@ -34,12 +34,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\Lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>..\Lib\SpreadsheetLight.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -47,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bhHelper.cs" />
+    <Compile Include="BoardingDailyReport.cs" />
     <Compile Include="BoardingPassTable.cs" />
     <Compile Include="LetturaBPTable.cs" />
     <Compile Include="IngressiManualiTable.cs" />

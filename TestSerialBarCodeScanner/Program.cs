@@ -10,9 +10,10 @@ namespace TestSerialBarCodeScanner
     {
         static void Main(string[] args)
         {
-            serialBarcodeReader reader = new serialBarcodeReader("COM7", 9600, System.IO.Ports.Parity.None, 8);
+            serialBarcodeReader reader = new serialBarcodeReader("COM4", 9600, System.IO.Ports.Parity.None, 8);
             reader.AddParser(new byte[] { 0x02, 0x36 }, new byte[] { 0x0D, 0x03 });
             reader.AddParser(new byte[] { 0x02, 0x38 }, new byte[] { 0x0D, 0x03 });
+            reader.AddParser(new byte[] { 0x02, 0x34 }, new byte[] { 0x0D, 0x03 });
             reader.OnMessageReceived += reader_OnMessageReceived;
             reader.Open();
             Console.ReadLine();

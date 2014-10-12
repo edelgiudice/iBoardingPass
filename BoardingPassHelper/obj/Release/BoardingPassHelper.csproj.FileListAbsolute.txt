@@ -9,7 +9,11 @@ C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\obj\Release\
 C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\BoardingPassHelper\bin\Release\log4net.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\BoardingPassHelper.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\DocumentFormat.OpenXml.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\log4net.dll
-L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.csprojResolveAssemblyReference.cache
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\SpreadsheetLight.dll
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\DocumentFormat.OpenXml.xml
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\SpreadsheetLight.xml
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb
+L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.csprojResolveAssemblyReference.cache
