@@ -17,6 +17,7 @@ C:\Sviluppo\iBoardingPass\Sviluppo\iBoardingPass\GunneboMFLAFLGate\bin\Release\M
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\GunneboMFLAFLGate.dll
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\GunneboMFLAFLGate.pdb
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\log4net.dll
-L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.csprojResolveAssemblyReference.cache
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.dll
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.pdb
+L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\Modbus.dll
+L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\Modbus.Extensions.dll

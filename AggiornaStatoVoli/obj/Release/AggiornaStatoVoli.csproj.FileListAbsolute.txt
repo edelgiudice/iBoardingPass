@@ -24,4 +24,3 @@ L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.Se
 L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.csproj.GenerateResource.Cache
 L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.exe
 L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.pdb
-L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.csprojResolveAssemblyReference.cache

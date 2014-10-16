@@ -16,4 +16,3 @@ L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\DocumentFormat.Open
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\SpreadsheetLight.xml
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb
-L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.csprojResolveAssemblyReference.cache

@@ -23,6 +23,5 @@ L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\DocumentFormat.OpenX
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\BoardingPassHelper.pdb
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\SpreadsheetLight.xml
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\bin\Release\DocumentFormat.OpenXml.xml
-L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.csprojResolveAssemblyReference.cache
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassTests\obj\Release\BoardingPassTests.pdb
