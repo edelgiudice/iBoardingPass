@@ -38,7 +38,8 @@ namespace EasyGateReport.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=EMILIOPC\\EXPRESSR2;Initial Catalog=EasyGate;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=217.133.34.176\\SQLEXPRESS;Initial Catalog=EasyGate;user=easyGateUser;" +
+            "password=easyG2013")]
         public string DbConnectionString {
             get {
                 return ((string)(this["DbConnectionString"]));

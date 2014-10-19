@@ -16,3 +16,12 @@ L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\DocumentFormat.Open
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\bin\Release\SpreadsheetLight.xml
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
 L:\Sviluppo\GIT\iBoardingPass\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\BoardingPassHelper.dll
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\BoardingPassHelper.pdb
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\DocumentFormat.OpenXml.dll
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\log4net.dll
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\SpreadsheetLight.dll
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\DocumentFormat.OpenXml.xml
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\bin\Release\SpreadsheetLight.xml
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\obj\Release\BoardingPassHelper.dll
+C:\Sviluppo\iBoardingPass_20141012\BoardingPassHelper\obj\Release\BoardingPassHelper.pdb

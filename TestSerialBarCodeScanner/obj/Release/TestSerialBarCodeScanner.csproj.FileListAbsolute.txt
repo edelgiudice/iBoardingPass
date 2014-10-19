@@ -25,3 +25,15 @@ L:\Sviluppo\GIT\iBoardingPass\TestSerialBarCodeScanner\bin\Release\DocumentForma
 L:\Sviluppo\GIT\iBoardingPass\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.csprojResolveAssemblyReference.cache
 L:\Sviluppo\GIT\iBoardingPass\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.exe
 L:\Sviluppo\GIT\iBoardingPass\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.pdb
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.exe
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.pdb
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\TestSerialBarCodeScanner.exe
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\TestSerialBarCodeScanner.pdb
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\BoardingPassHelper.dll
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\log4net.dll
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\SpreadsheetLight.dll
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\DocumentFormat.OpenXml.dll
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\BoardingPassHelper.pdb
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\SpreadsheetLight.xml
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\bin\Release\DocumentFormat.OpenXml.xml
+C:\Sviluppo\iBoardingPass_20141012\TestSerialBarCodeScanner\obj\Release\TestSerialBarCodeScanner.csprojResolveAssemblyReference.cache

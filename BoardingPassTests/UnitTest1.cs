@@ -1,6 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using iBoardingPass;
+using AggiornaStatoVoli;
+using easyGateGunnebo;
+using System.Data.Linq;
+using System.Linq;
 
 namespace BoardingPassTests
 {
@@ -55,5 +59,20 @@ namespace BoardingPassTests
             BoardingDailyReport bdr = new BoardingDailyReport(FlightDate, @"L:\temp\TestExcel", BoardingPassTests.Properties.Settings.Default.connectionString);
 
         }
+
+        [TestMethod]
+        public void TestIcao2IATA()
+        {
+            string ConnStr = @"Data Source=172.16.10.75\SQLEXPRESS;Initial Catalog=EasyGate;User ID=easyGateUser;Password=easyG2013";
+            DataContext dx = new DataContext(ConnStr);
+
+            Table<ICAO2IATA> icao2IataTable = dx.GetTable<ICAO2IATA>();
+            var v=icao2IataTable.Where(w=>w.ICAO=="EZY").FirstOrDefault();
+            string iata = v.IATA;
+           
+
+        }
+
+       
     }
 }

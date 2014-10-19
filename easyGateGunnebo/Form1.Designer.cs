@@ -38,7 +38,13 @@
             this.panelReset = new System.Windows.Forms.Panel();
             this.labelBusy = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelNODB = new System.Windows.Forms.Panel();
+            this.version = new System.Windows.Forms.Label();
+            this.lbServer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelNODB.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelENG
@@ -127,6 +133,44 @@
             this.label3.Text = "label3";
             this.label3.Visible = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(428, 751);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panelNODB
+            // 
+            this.panelNODB.Controls.Add(this.lbServer);
+            this.panelNODB.Location = new System.Drawing.Point(194, 760);
+            this.panelNODB.Name = "panelNODB";
+            this.panelNODB.Size = new System.Drawing.Size(76, 40);
+            this.panelNODB.TabIndex = 8;
+            // 
+            // version
+            // 
+            this.version.AutoSize = true;
+            this.version.Location = new System.Drawing.Point(346, 778);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(16, 13);
+            this.version.TabIndex = 9;
+            this.version.Text = "v.";
+            // 
+            // lbServer
+            // 
+            this.lbServer.AutoSize = true;
+            this.lbServer.BackColor = System.Drawing.Color.Transparent;
+            this.lbServer.ForeColor = System.Drawing.Color.Lime;
+            this.lbServer.Location = new System.Drawing.Point(25, 15);
+            this.lbServer.Name = "lbServer";
+            this.lbServer.Size = new System.Drawing.Size(38, 13);
+            this.lbServer.TabIndex = 0;
+            this.lbServer.Text = "Server";
+            // 
             // easyGate
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
@@ -134,6 +178,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(480, 800);
+            this.Controls.Add(this.version);
+            this.Controls.Add(this.panelNODB);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.labelBusy);
             this.Controls.Add(this.panelReset);
             this.Controls.Add(this.panelClose);
@@ -153,6 +200,9 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.easyGate_FormClosed);
             this.DoubleClick += new System.EventHandler(this.easyGate_DoubleClick);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelNODB.ResumeLayout(false);
+            this.panelNODB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,6 +219,10 @@
         private System.Windows.Forms.Panel panelReset;
         private System.Windows.Forms.Label labelBusy;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelNODB;
+        private System.Windows.Forms.Label version;
+        private System.Windows.Forms.Label lbServer;
     }
 }
 

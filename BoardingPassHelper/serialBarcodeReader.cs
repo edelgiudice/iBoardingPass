@@ -8,6 +8,8 @@ namespace iBoardingPass
 {
     public class barcodeParser
     {
+
+       
         public delegate void SerialMessageReceived(string Message);
 
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger

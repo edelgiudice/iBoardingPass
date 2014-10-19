@@ -43,6 +43,8 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -66,9 +68,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AggiornaStatoVoli\AggiornaStatoVoli.csproj">
+      <Project>{09bd30d6-8752-4479-8188-f32b763f49d4}</Project>
+      <Name>AggiornaStatoVoli</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BoardingPassHelper\BoardingPassHelper.csproj">
       <Project>{3f9a048f-81d2-40f4-a263-f207494f6b2a}</Project>
       <Name>BoardingPassHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\easyGateGunnebo\easyGateGunnebo.csproj">
+      <Project>{78b17e0d-f263-4167-a0a2-c7bdfd876636}</Project>
+      <Name>easyGateGunnebo</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -24,3 +24,11 @@ L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.Se
 L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.csproj.GenerateResource.Cache
 L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.exe
 L:\Sviluppo\GIT\iBoardingPass\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.pdb
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\bin\Release\AggiornaStatoVoli.exe.config
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\bin\Release\AggiornaStatoVoli.exe
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\bin\Release\AggiornaStatoVoli.pdb
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.ProjectInstaller.resources
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.ServiceAggStatoVoli.resources
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.csproj.GenerateResource.Cache
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.exe
+C:\Sviluppo\iBoardingPass_20141012\AggiornaStatoVoli\obj\Release\AggiornaStatoVoli.pdb

@@ -12,6 +12,8 @@ using log4net;
 using log4net;
 using log4net.Config;
 using System.Reflection;
+using System.Data.Linq.Mapping;
+using System.Data.Linq;
 
 namespace easyGateGunnebo
 {
@@ -20,7 +22,7 @@ namespace easyGateGunnebo
         private Gunnebo.MFLAFLGate GateObj;
         private serialBarcodeReader reader;
         private SerialPort port;
-
+        private string versione = "v1.1.2";
 
         private string cartaImbarcoITA = "Carta d'Imbarco";
         private string cartaImbarcoENG = "Boarding Pass";
@@ -31,7 +33,14 @@ namespace easyGateGunnebo
         private string nonValidoDATE_ENG = "WRONG DAY";
         private string nonValidoAIRPORT_ITA = "AEROPORTO ERRATO";
         private string nonValidoAIRPORT_ENG = "WRONG AIRPORT";
+        private string nonValidoWFLIGHT_ITA = "VOLO ERRATO";
+        private string nonValidoWFLIGHT_ENG = "WRONG FLIGHT";
+        private string nonValidoFLIGHTNOMORE_ITA = "VOLO NON PIU DISP.";
+        private string nonValidoFLIGHTNOMORE_ENG = "FLIGHT NO AVAILABLE";
+        private string nonValidoTIMEWINDOW_ITA = "GATE CHIUSO";
+        private string nonValidoTIMEWINDOW_ENG = "GATE CLOSED";
 
+        private Table<ICAO2IATA> icao2IataTable;
 
         private Color greenBckColor = Color.Lime;
         private Color errorBckColor = Color.OrangeRed;
@@ -78,14 +87,44 @@ namespace easyGateGunnebo
             {
                 if(value)
                 {
-                    labelBusy.Text = "B";
+                    if (this.InvokeRequired)
+                    {
+                        blockTimerThSafe d = new blockTimerThSafe(OnChangeBusy);
+                        this.Invoke(d, new object[] { value });
+                    }
+                    else
+                    {
+                        labelBusy.Text = "B";
+                    }
                 }
                 else
                 {
-                    labelBusy.Text = "";
+                    if (this.InvokeRequired)
+                    {
+                        blockTimerThSafe d = new blockTimerThSafe(OnChangeBusy);
+                        this.Invoke(d, new object[] { value });
+                    }
+                    else
+                    {
+                        labelBusy.Text = "";
+                    }
                 }
                 __busy = value;
+
             }
+        }
+
+        private void OnChangeBusy(object state)
+        {
+            if ((bool)state)
+            {
+                labelBusy.Text = "B";
+            }
+            else
+            {
+                labelBusy.Text = "";
+            }
+
         }
         private bool __busy;
         private void ResetError()
@@ -97,21 +136,68 @@ namespace easyGateGunnebo
             Reset();
 
         }
+        private int _runningMode;
 
         private System.Threading.Timer _blockTimer;
+        private System.Threading.Timer _serverTimer;
 
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+        private bool passepartoutEnabled;
         public easyGate()
         {
+
+            Label.CheckForIllegalCrossThreadCalls = false;
             
             Log.Info("EasyGate Startup");
+
             InitializeComponent();
+
+            this.version.Text = versione;
+
             _blockTimer = new System.Threading.Timer(new System.Threading.TimerCallback(OnBlockTimer));
             _blockTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
+
+            _serverTimer=new System.Threading.Timer(new System.Threading.TimerCallback(OnLookForServer));
+            _serverTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
+
             InitSerialBarcodeReader();
             InitGunnabo();
             labelITA.Text = cartaImbarcoITA;
             labelENG.Text = cartaImbarcoENG;
+
+            _runningMode = easyGateGunnebo.Properties.Settings.Default.RunningMode;
+
+            LoadIcao2Iata();
+
+            passepartoutEnabled = easyGateGunnebo.Properties.Settings.Default.passepartoutEnabled;
+        }
+
+        private void LoadIcao2Iata()
+        {
+            if (_runningMode == 1)
+            {
+                try
+                {
+
+                    DataContext dx = new DataContext(easyGateGunnebo.Properties.Settings.Default.ConnectionString);
+
+                    icao2IataTable = dx.GetTable<ICAO2IATA>();
+                }
+                catch
+                {
+
+                }
+            }
+        }
+
+        private void OnLookForServer(object state)
+        {
+            _serverTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
+            Log.Error("Imposto nuovamente il tornello in running mode 1");
+            _runningMode=easyGateGunnebo.Properties.Settings.Default.RunningMode;
+            LoadIcao2Iata();
+            panelNODB.BackColor = greenBckColor;
+
         }
 
         private void Reset()
@@ -205,6 +291,7 @@ namespace easyGateGunnebo
             
         }
 
+        int retryCounter = 3;
         void reader_OnMessageReceived(string Message)
         {
             Log.Debug("Lettura Barcode: " + Message);
@@ -213,11 +300,21 @@ namespace easyGateGunnebo
             {
                 _busy = true;
                 try
-                { 
+                {
                     BoardingPassData _BpD = BoardingPassData.Parse(Message);
 
+
+
+                    //label3.Text = Message;
                     if (_BpD != null)
                     {
+                        if (_BpD.ManualForced && passepartoutEnabled)
+                        {
+                            //Log.Debug("TTTT:01");
+                            OpenGate();
+                            return;
+                        }
+
                         //Console.WriteLine("Flight N." + _BpD.FlightNumber);
                         //Console.WriteLine("Date: "+BPHelper.GetDateFromJulian(Convert.ToInt32(_BpD.DateOfFlight)).ToShortDateString());
                         //Console.WriteLine("From City: "+_BpD.FromCity);
@@ -225,7 +322,23 @@ namespace easyGateGunnebo
                         //Console.WriteLine("Carrier: "+_BpD.OperatingCarrier);
                         //Console.WriteLine("Passenger Name: "+ _BpD.PassengerName);
 
-
+                        if (_runningMode == 1 && icao2IataTable != null && icao2IataTable.Count() > 0)
+                        {
+                            //Log.Debug("TTTT:02" + _BpD.OperatingCarrier.Trim());
+                            if (_BpD.OperatingCarrier.Trim().Length > 2)
+                            {
+                                var v = icao2IataTable.Where(w => w.ICAO == _BpD.OperatingCarrier).FirstOrDefault();
+                                if ((v != null) && (v.IATA.Trim() != string.Empty))
+                                {
+                                    _BpD.OperatingCarrier = v.IATA;
+                                    //Log.Debug("TTTT:03" + v.IATA);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            _runningMode = 0;
+                        }
                         bool GoNoGo = true;
                         string resultCheck = string.Empty;
                         string StatoVolo = string.Empty;
@@ -244,34 +357,29 @@ namespace easyGateGunnebo
                                 easyGateGunnebo.Properties.Settings.Default.CodicePostazione,
                                 easyGateGunnebo.Properties.Settings.Default.FinestraOreAccettazione,
                                 easyGateGunnebo.Properties.Settings.Default.FastTrack,
-                                easyGateGunnebo.Properties.Settings.Default.RunningMode,
+                                _runningMode,
                                 out StatoVolo,
                                 out OraPrevistaVolo,
                                 out OraEffettivaVolo);
-                       
+
+                            retryCounter = 3;
+
                             if (resultCheck.Trim().IndexOf('X') == -1)
                             {
-                                labelITA.Text = cartaImbarcoITA;
-                                labelENG.Text = cartaImbarcoENG;
-                                try
-                                {
-                                    GateObj.SetBuzz(200);
-                                    GateObj.OpenADir_SingleTransit();
-                                    GateObj.SetResetLight();
-                                }catch(SystemException ex)
-                                {
-                                    Log.Error("Errore durante il comando di apertura");
-                                    ErrorGunnaboMsg = ex.ToString();
-                                    ErrorGunnabo = true;
-                                
-                                }
-                                _busy = false;
+                                OpenGate();
                             }
                             else
                             {
 
                                 BlockPassage(resultCheck);
                             }
+                        }
+                        catch (BoardingPassException ex)
+                        {
+                            Log.Error(ex.Message);
+                            ErrorGunnaboMsg = ex.ToString();
+                            ErrorGunnabo = true;
+                            _busy = false;
                         }
                         catch (System.Exception ex)
                         {
@@ -281,16 +389,47 @@ namespace easyGateGunnebo
                             _busy = false;
                         }
                     }
-               
+
                     else
                     {
                         BlockPassage(string.Empty);
                     }
                 }
-                catch(Exception ex)
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    if (retryCounter == 3)
+                    {
+                       
+                        double interval = (double)easyGateGunnebo.Properties.Settings.Default.ResetRunnigMode;
+                        double intervalMs = TimeSpan.FromMinutes(interval).TotalMilliseconds;
+                        _serverTimer.Change(
+                            (long)intervalMs
+                            , System.Threading.Timeout.Infinite);
+                    }
+                    Log.Error("Database non raggiungibile");
+                    _runningMode = 0;
+                    panelNODB.BackColor = errorBckColor;
+                    if (retryCounter-- > 0)
+                    {
+                        _busy = false;
+                        reader_OnMessageReceived(Message);
+                    }
+                    else
+                    {
+                        BlockPassage(string.Empty);
+                        retryCounter = 3;
+                    }
+                    
+
+                }
+                catch (Exception ex)
                 {
                     Log.Error("Errore durante il parsing della carta di imbarco");
                     BlockPassage(string.Empty);
+                }
+                finally
+                {
+                    _busy = false;
                 }
 
             }
@@ -298,6 +437,26 @@ namespace easyGateGunnebo
             {
                 Log.Debug("Messaggio non gestito Sistema Occupato");
             }
+        }
+
+        private void OpenGate()
+        {
+            labelITA.Text = cartaImbarcoITA;
+            labelENG.Text = cartaImbarcoENG;
+            try
+            {
+                GateObj.SetBuzz(200);
+                GateObj.OpenADir_SingleTransit();
+                GateObj.SetResetLight();
+            }
+            catch (SystemException ex)
+            {
+                Log.Error("Errore durante il comando di apertura");
+                ErrorGunnaboMsg = ex.ToString();
+                ErrorGunnabo = true;
+
+            }
+            _busy = false;
         }
 
         private void BlockPassage(string blockMsg)
@@ -319,11 +478,35 @@ namespace easyGateGunnebo
                     labelITA.Text = nonValidoAIRPORT_ITA;
                     labelENG.Text = nonValidoAIRPORT_ENG;
                 }
-               
+
+                if (blockMsg != null && blockMsg.Length >= 2 && blockMsg[2] == 'X')
+                {
+                    labelITA.Text = nonValidoWFLIGHT_ITA;
+                    labelENG.Text = nonValidoWFLIGHT_ENG;
+                }
+
+          
+
+                if (blockMsg != null && blockMsg.Length >= 3 && blockMsg[3] == 'X')
+                {
+                    labelITA.Text = nonValidoFLIGHTNOMORE_ITA;
+                    labelENG.Text = nonValidoFLIGHTNOMORE_ENG;
+                }
+
+                if (blockMsg != null && blockMsg.Length >= 4 && blockMsg[4] == 'X')
+                {
+                    labelITA.Text = nonValidoTIMEWINDOW_ITA;
+                    labelENG.Text = nonValidoTIMEWINDOW_ENG;
+                }
+
+                
+
                 Color bkOld = this.BackColor;
                 
                 panelErrorBarcodeReader.BackColor = errorBckColor;
                 panelErrorGunnabo.BackColor = errorBckColor;
+                panelNODB.Visible = false;
+
                 panelReset.BackColor = errorBckColor;
                 panelClose.BackColor = errorBckColor;
 
@@ -364,6 +547,7 @@ namespace easyGateGunnebo
                     panelErrorGunnabo.BackColor = greenBckColor;
                     panelReset.BackColor = greenBckColor;
                     panelClose.BackColor = greenBckColor;
+                    panelNODB.Visible = true;
                 }
                 
             }
@@ -419,5 +603,18 @@ namespace easyGateGunnebo
             Log.Debug("panelReset_Click");
             ResetError();
         }
+    }
+
+    [Table]
+    public class ICAO2IATA
+    {
+
+        [Column]
+        public int ID { get; set; }
+        [Column]
+        public string ICAO { get; set; }
+        [Column]
+        public string IATA { get; set; }
+
     }
 }

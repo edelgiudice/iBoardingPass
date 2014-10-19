@@ -21,3 +21,10 @@ L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.dl
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.pdb
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\Modbus.dll
 L:\Sviluppo\GIT\iBoardingPass\GunneboMFLAFLGate\bin\Release\Modbus.Extensions.dll
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\bin\Release\GunneboMFLAFLGate.dll
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\bin\Release\GunneboMFLAFLGate.pdb
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\bin\Release\log4net.dll
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\bin\Release\Modbus.dll
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\bin\Release\Modbus.Extensions.dll
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.dll
+C:\Sviluppo\iBoardingPass_20141012\GunneboMFLAFLGate\obj\Release\GunneboMFLAFLGate.pdb

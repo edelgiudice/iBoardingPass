@@ -43,3 +43,13 @@ L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\iBoardingPass.Properties.R
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\iBoardingPass.csproj.GenerateResource.Cache
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\easyGate.exe
 L:\Sviluppo\GIT\iBoardingPass\iBoardingPass\obj\Debug\easyGate.pdb
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\iBoardingPass.csprojResolveAssemblyReference.cache
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\MainWindow.baml
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\MainWindow.g.cs
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\App.g.cs
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\easyGate_MarkupCompile.cache
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\easyGate.g.resources
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\iBoardingPass.Properties.Resources.resources
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\iBoardingPass.csproj.GenerateResource.Cache
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\easyGate.exe
+C:\Sviluppo\iBoardingPass_20141012\iBoardingPass\obj\Debug\easyGate.pdb
